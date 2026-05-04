@@ -15,58 +15,63 @@ body {
     overflow-y: scroll;
 }
 
+/* 每一页 */
 .page {
     height: 100vh;
     padding: 30px 20px;
     box-sizing: border-box;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 p {
     font-size: 14px;
     line-height: 1.6;
     color: #444;
+    margin-bottom: 10px;
 }
 
-.section {
-    margin-bottom: 20px;
-}
-
+/* 图片容器 */
 .image-box {
     margin-bottom: 20px;
 }
 
+/* 🔥 核心优化：限制图片高度 */
 .image-box img {
     width: 100%;
-    border-radius: 12px;
+    max-height: 45vh;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #f5f5f5;
 }
 
 .caption {
     font-size: 12px;
     color: #999;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .tag {
     display: inline-block;
-    background: #f3f3f3;
+    background: #f2f2f2;
     padding: 4px 10px;
     border-radius: 20px;
     font-size: 12px;
     margin-right: 6px;
 }
-
 </style>
 </head>
 
@@ -89,74 +94,65 @@ p {
 <div class="page">
     <h1>我是谁？</h1>
 
-    <p>
-    我有7年内容运营经验，同时具备<strong>电商卖家 + 自媒体创作者</strong>双重身份。
-    </p>
+    <p>我有7年内容运营经验，同时具备<strong>电商卖家 + 自媒体创作者</strong>双重身份。</p>
 
-    <p>
-    在电商侧，我在闲鱼累计完成<strong>39万销售额</strong>，理解真实转化逻辑；
-    在内容侧，我运营<strong>5个万粉公众号</strong>，熟悉内容增长与用户心理。
-    </p>
+    <p>在电商侧，我在闲鱼累计完成<strong>39万销售额</strong>；在内容侧，我运营<strong>5个万粉公众号</strong>。</p>
 
-    <p>
-    当前专注GEO（生成式引擎优化），核心目标是：
-    <strong>让内容被AI理解、引用和推荐。</strong>
-    </p>
+    <p>当前专注GEO（生成式引擎优化），核心是：<strong>让内容被AI理解并引用。</strong></p>
 
-    <div class="section">
-        <span class="tag">电商视角</span>
+    <div style="margin-top:20px;">
+        <span class="tag">电商转化</span>
         <span class="tag">内容增长</span>
         <span class="tag">GEO实战</span>
     </div>
 </div>
 
-<!-- 第3页 GEO方法论 -->
+<!-- 第3页 GEO方法 -->
 <div class="page">
-    <h1>GEO项目方法论</h1>
+    <h1>GEO方法论</h1>
 
-    <p><strong>1. 需求挖掘：</strong>分析用户在AI中的真实提问</p>
-    <p><strong>2. 内容生产：</strong>围绕“可被引用”结构设计内容</p>
-    <p><strong>3. 系统分发：</strong>多平台发布，提高被抓取概率</p>
-    <p><strong>4. 监测迭代：</strong>观察AI引用情况持续优化</p>
+    <p><strong>1. 需求挖掘：</strong>分析AI中的真实提问</p>
+    <p><strong>2. 内容生产：</strong>设计“可被引用”的结构</p>
+    <p><strong>3. 分发：</strong>多平台发布，提高收录概率</p>
+    <p><strong>4. 迭代：</strong>根据AI引用情况优化</p>
 
     <div class="image-box">
         <img src="1.jpg">
-        <div class="caption">图：千问识别并引用我的内容</div>
+        <div class="caption">图：千问引用我的内容</div>
     </div>
 
     <div class="image-box">
         <img src="2.jpg">
-        <div class="caption">图：豆包检索结果中出现我的内容</div>
+        <div class="caption">图：豆包检索结果出现我的内容</div>
     </div>
 </div>
 
-<!-- 第4页 AI引用案例 -->
+<!-- 第4页 AI引用 -->
 <div class="page">
-    <h1>AI引用与识别案例</h1>
+    <h1>AI引用案例</h1>
 
+    <p><strong>案例1：内容进入参考来源池</strong></p>
     <div class="image-box">
         <img src="3.jpg">
-        <div class="caption">图：千问多来源引用我的GEO内容</div>
+        <div class="caption">图：千问引用展示</div>
     </div>
 
+    <p><strong>案例2：多平台交叉识别</strong></p>
     <div class="image-box">
         <img src="4.jpg">
-        <div class="caption">图：GEO相关内容进入参考来源池</div>
+        <div class="caption">图：GEO内容被收录</div>
     </div>
 
+    <p><strong>案例3：AI综合推荐</strong></p>
     <div class="image-box">
         <img src="5.jpg">
-        <div class="caption">图：多平台内容被AI交叉识别</div>
+        <div class="caption">图：多来源验证</div>
     </div>
-
-    <p>
-    👉 说明：我的内容已被AI系统识别，并进入其“参考来源池”，具备被引用能力。
-    </p>
 </div>
 
 <!-- 第5页 数据 -->
 <div class="page">
-    <h1>内容与转化数据</h1>
+    <h1>数据与成果</h1>
 
     <p>闲鱼电商：39万销售额</p>
     <p>公众号矩阵：5个万粉账号</p>
@@ -164,15 +160,15 @@ p {
     <p>ChatGPT热点引流：4万粉</p>
 </div>
 
-<!-- 第6页 为什么稿定 -->
+<!-- 第6页 稿定匹配 -->
 <div class="page">
-    <h1>为什么选择稿定科技？</h1>
+    <h1>为什么适合稿定科技？</h1>
 
-    <p>1. 稿定的核心用户 = 内容创作者 / 电商卖家</p>
-    <p>2. 我同时具备这两类用户的实战经验</p>
-    <p>3. 我理解“内容 → 转化”的完整链路</p>
-    <p>4. GEO能力可以帮助稿定在AI搜索中获得推荐位</p>
-    <p>5. 可以把稿定内容变成AI优先引用的“标准答案”</p>
+    <p>1. 我本身就是稿定核心用户（电商 + 内容创作者）</p>
+    <p>2. 理解“内容 → 转化”的完整链路</p>
+    <p>3. 有GEO实战经验，能让内容被AI推荐</p>
+    <p>4. 可以把稿定内容做成AI优先引用来源</p>
+    <p>5. 帮助品牌在AI搜索中占据入口</p>
 </div>
 
 </body>
